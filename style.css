@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+}
+
+body {
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 50vw;
+    height: 45vw;
+    margin: auto;
+    background: linear-gradient(rgb(146, 199, 146), rgb(207, 207, 152));
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.head {
+    background-color: rgb(70, 70, 165);
+    border-radius: 10%;
+}
+
+.snake {
+    background-color: green;
+    margin: 5%;
+}
+
+.food {
+    background-color: black;
+    border-radius: 100%;
+}
+
+.score {
+    margin: auto;
+    width: 50vw;
+    height: 2vw;
+    margin-bottom: 0.4vw;
+}
+
+#score {
+    position: absolute;
+    font-size: 2rem;
+}
+
+#highScore {
+    position: absolute;
+    left: 60vw;
+    font-size: 2rem;
+    float: right;
+}
